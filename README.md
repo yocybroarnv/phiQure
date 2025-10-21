@@ -4,12 +4,12 @@ PhiQure is a next-generation secure mail platform that combines Quantum Key Dist
 
 ## 🚀 Features
 
-- 🔐 End-to-end encryption with QKD-derived keys
-- 🤖 AI-powered phishing detection
-- 🔑 BB84 quantum key exchange simulation
-- 📊 Real-time QBER monitoring
-- 🛡️ Zero-knowledge message storage
-- 🔍 Anomaly detection and audit logging
+-  End-to-end encryption with QKD-derived keys
+-  AI-powered phishing detection
+-  BB84 quantum key exchange simulation
+-  Real-time QBER monitoring
+-  Zero-knowledge message storage
+-  Anomaly detection and audit logging
 
 ## 🛠️ Tech Stack
 
@@ -184,4 +184,5 @@ This is a demonstration system. While it implements real cryptographic primitive
 - Enable additional security headers
 - Implement rate limiting
 - Add IP-based blocking
+
 - Enable security audit logging
