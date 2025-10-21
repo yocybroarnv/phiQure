@@ -1,6 +1,6 @@
-# PhiQure - Quantum-Safe Mail System
+# phiQure - Quantum-Safe Mail System
 
-PhiQure is a next-generation secure mail platform that combines Quantum Key Distribution (QKD) simulation, AI-driven threat detection, and modern cryptography.
+phiQure is a next-generation secure mail platform that combines Quantum Key Distribution (QKD) simulation, AI-driven threat detection, and modern cryptography.
 
 ## 🚀 Features
 
@@ -186,3 +186,4 @@ This is a demonstration system. While it implements real cryptographic primitive
 - Add IP-based blocking
 
 - Enable security audit logging
+
