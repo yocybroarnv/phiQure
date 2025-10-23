@@ -1,189 +1,86 @@
-# phiQure - Quantum-Safe Mail System
+phiQure – Quantum-Safe Mail System
 
-phiQure is a next-generation secure mail platform that combines Quantum Key Distribution (QKD) simulation, AI-driven threat detection, and modern cryptography.
+phiQure is a proprietary quantum-secure communication framework developed by Arnav Raj (Cybroarnv).
+It showcases applied research in Quantum Key Distribution (QKD), AI-driven threat detection, and modern cryptography, aimed at advancing secure digital communication.
 
-## 🚀 Features
+⚠️ This project is not open-source. It is displayed only for evaluation and recruitment purposes.
+No permission is granted to copy, modify, or deploy any part of this project without explicit written approval from the author.
 
--  End-to-end encryption with QKD-derived keys
--  AI-powered phishing detection
--  BB84 quantum key exchange simulation
--  Real-time QBER monitoring
--  Zero-knowledge message storage
--  Anomaly detection and audit logging
+💡 Concept Overview
 
-## 🛠️ Tech Stack
+phiQure merges simulated BB84 QKD protocols, AI phishing detection, and AES-256 encryption to demonstrate a quantum-safe mail system.
 
-- **Backend**: FastAPI + Python 3.11
-- **Database**: PostgreSQL
-- **Crypto**: AES-256 + HKDF
-- **AI/ML**: Scikit-learn + TF-IDF
-- **Frontend**: React + TypeScript
-- **Container**: Docker + Docker Compose
+Core Modules
 
-## 🏗️ Setup & Development
+Quantum Key Distribution (BB84 Simulation)
 
-### Prerequisites
+Quantum Bit Error Rate (QBER) Monitoring
 
-- Python 3.11+
-- Node.js 18+
-- Docker and Docker Compose
-- PostgreSQL 15+
+AI-based Phishing Detection (TF-IDF + Logistic Regression)
 
-### Quick Start
+Zero-Knowledge Message Storage
 
-1. Clone the repository and set up environment:
+Secure Key Rotation & Anomaly Auditing
 
-```bash
-# Create and activate virtual environment
-python -m venv venv
-source venv/bin/activate  # On Windows: .\venv\Scripts\activate
+🧠 Technical Stack
 
-# Install dependencies
-pip install -r requirements.txt
+Backend: FastAPI (Python 3.11)
 
-# Copy example env and edit
-cp .env.example .env
-```
+Frontend: React + TypeScript
 
-2. Start the database and backend:
+Database: PostgreSQL
 
-```bash
-# Start PostgreSQL and API via Docker
-docker-compose up -d
+Crypto: AES-256-GCM, HKDF
 
-# Apply database migrations
-alembic upgrade head
-```
+AI/ML: Scikit-learn
 
-3. Start development server:
+Containerization: Docker
 
-```bash
-# Start FastAPI development server
-uvicorn app.main:app --reload --port 8000
-```
+⚙️ Development Notes
 
-4. Run tests:
+This project demonstrates:
 
-```bash
-# Run backend tests
-pytest
+Integration of quantum-inspired encryption models
 
-# Run with coverage
-pytest --cov=app tests/
-```
+Application of machine learning for phishing detection
 
-## 🔒 Security Features
+Secure backend design with ephemeral keys
 
-### Quantum Key Distribution (QKD)
+Compliance-oriented audit logging
 
-- BB84 protocol simulation
-- QBER monitoring and eavesdropping detection
-- Key derivation via HKDF
-- Ephemeral session keys
+The QKD protocol here is a software simulation, intended for demonstration, research, and presentation purposes only.
 
-### AI Threat Detection
+🔒 Security Features
 
-- TF-IDF + Logistic Regression for phishing detection
-- Real-time anomaly monitoring
-- Feature importance analysis
-- Continuous model updates (optional)
+End-to-end encryption using quantum-derived keys
 
-### Cryptography
+Real-time QBER monitoring
 
-- AES-256-GCM for message encryption
-- Forward secrecy with ephemeral keys
-- Zero-knowledge message storage
-- Secure key rotation
+Zero-knowledge message storage
 
-## 📚 API Documentation
+Forward secrecy + key rotation
 
-Once running, visit:
-- OpenAPI docs: http://localhost:8000/docs
-- ReDoc: http://localhost:8000/redoc
+AI-based anomaly and phishing detection
 
-## 🧪 Development
+🚀 Future Scope
 
-### Running Tests
+Hardware QKD integration
 
-```bash
-# Run all tests
-pytest
+Post-Quantum Cryptography (PQC) transition
 
-# Run specific test file
-pytest tests/test_qkd.py
+Blockchain-based audit verification
 
-# Run with coverage
-pytest --cov=app --cov-report=html tests/
-```
+Federated learning for phishing models
 
-### Database Migrations
+📜 License & Ownership
 
-```bash
-# Create new migration
-alembic revision -m "description"
+Proprietary License – All Rights Reserved
+© 2025 Arnav Raj (Cybroarnv)
 
-# Run migrations
-alembic upgrade head
+This project and all its components are the exclusive intellectual property of Arnav Raj (Cybroarnv).
+It is shared strictly for professional and recruitment review.
 
-# Rollback
-alembic downgrade -1
-```
+Unauthorized copying, distribution, modification, or use of this project, in part or in full, is strictly prohibited and may result in legal action.
 
-## 🐋 Docker Deployment
-
-Build and run with Docker Compose:
-
-```bash
-# Build images
-docker-compose build
-
-# Start services
-docker-compose up -d
-
-# View logs
-docker-compose logs -f
-
-# Stop services
-docker-compose down
-```
-
-## 🔍 Monitoring & Logs
-
-Security events are logged to the `security_logs` table and include:
-- Key exchange attempts
-- High QBER incidents
-- Phishing detections
-- Authentication events
-
-## 🚀 Future Enhancements
-
-- [ ] Hardware QKD integration
-- [ ] Federated learning for phishing detection
-- [ ] Post-quantum cryptography upgrades
-- [ ] Blockchain audit trail
-- [ ] Multi-party key exchange
-
-## 📝 License
-
-MIT License - See LICENSE file
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create feature branch
-3. Commit changes
-4. Push to branch
-5. Open pull request
-
-## ⚠️ Security Notes
-
-This is a demonstration system. While it implements real cryptographic primitives, the QKD portion is simulated. For production use:
-
-- Replace QKD simulation with hardware
-- Use proper HSM for key storage
-- Enable additional security headers
-- Implement rate limiting
-- Add IP-based blocking
-
-- Enable security audit logging
-
+📩 Contact for authorization or queries:
+suvam.arnavraj@gmail.com
